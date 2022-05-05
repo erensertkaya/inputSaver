@@ -19,7 +19,25 @@ default html theme so you need to add also bootstrap4 too.
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 ```
 
-# Simple Usage
+# Simple Usages
+
+    #Database Example
+
+````javascript
+$("#exampleDiv").inputSaver({
+    identifier:["id","name"],
+    name:"count",
+    saveTo:"database",
+    context:[$("#myForm")],
+    disInclude:[".myClass","myId"],
+    urlToMount:"/plugin/inputsaver/all",
+    urlToSave:"/plugin/inputsaver/create",
+    urlToUpdate:"/plugin/inputsaver/update",
+    urlToDelete:"/plugin/inputsaver/delete"
+});
+````
+
+    #Storage Example
 
 ````javascript
 $("#exampleDiv").inputSaver({
@@ -27,7 +45,7 @@ $("#exampleDiv").inputSaver({
     name:"count",
     saveTo:"storage",
     context:[$("#myForm")],
-    disInclude:[".myClass","myId"]
+    disInclude:[".myClass","myId"],
 });
 ````
 ___
@@ -35,22 +53,22 @@ ___
 You have to select where to plugin mount with jQuery selector, after that you can initialize plugin
 on that element.
 
->identifier: It's the array of attribute that select all the form elements on current page that plugin initialized.
+>identifier: By given order inputSaver collets all the input elements according to theese attiributes values by given order..
 
->name: It's name of the plugin that belongs that page. It has to be unique for that project.
+>name: Name of the plugin that belongs that page. It has to be unique for that page.
 
->context: It's an array of elements to determine which range of page element's will saved.
+>context: Array of elements to determine which range of dom element's will saved.
 > If you don't set that option, by default it's going to set as document object that means it's
 will save all the form elements.
 
 >saveTo: As option name tells, this option is where you decide to save collected data
 whether server or client. (You have two option database and storage, by default it's set as storage).
 
->disInclude: It's array of jQuery selectors for disincluding unwanted input elements. 
+>disInclude: Array of jQuery selectors for disincluding unwanted input elements. 
 
 # Optional Options
->urlToSave, urlToSave, urlToUpdate, urlToDelete: Those options need to use if saveTo option set as database
-every option corresponding to backend url which perform database related operations.
+>urlToSave, urlToSave, urlToUpdate, urlToDelete: Those options need to use if saveTo option set as database.
+Every option corresponding to backend url which perform database related operations.
 
 # Callback Functions
 
