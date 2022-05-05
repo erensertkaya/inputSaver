@@ -48,11 +48,11 @@ whether server or client. (You have two option database and storage, by default 
 
 >disInclude: It's array of jQuery selectors for disincluding unwanted input elements. 
 
-#Optional Options
+# Optional Options
 >urlToSave, urlToSave, urlToUpdate, urlToDelete: Those options need to use if saveTo option set as database
 every option corresponding to backend url which perform database related operations.
 
-#Callback Functions
+# Callback Functions
 
 >afterMount: Triggered immediately after values mount to elements which saved by inputSaver.
 > 
