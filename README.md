@@ -1,5 +1,7 @@
 # inputSaver
-A jQuery plugin for save your form elements current state.
+A jQuery plugin for save your form elements current state and dataTable columnVisibility options.
+
+(Current api only support columnVisibility for dataTables but it may expand for further dataTable options.)
 
 # Installation
 inputSaver plugin has built on jQuery-ui widget factory so after adding jQuery to your
@@ -21,10 +23,11 @@ default html theme so you need to add also bootstrap4 too.
 
 ````javascript
 $("#exampleDiv").inputSaver({
-    identifier:"name",
+    identifier:["id","name"],
     name:"count",
-    context:[$("#countingForm")],
     saveTo:"storage",
+    context:[$("#myForm")],
+    disInclude:[".myClass","myId"]
 });
 ````
 ___
@@ -32,12 +35,34 @@ ___
 You have to select where to plugin mount with jQuery selector, after that you can initialize plugin
 on that element.
 
->identifier: It's the attribute that select all the form elements on current page that plugin works.
+>identifier: It's the array of attribute that select all the form elements on current page that plugin initialized.
 
 >name: It's name of the plugin that belongs that page. It has to be unique for that project.
 
 >context: It's an array of elements to determine which range of page element's will saved.
 > If you don't set that option, by default it's going to set as document object that means it's
 will save all the form elements.
+
+>saveTo: As option name tells, this option is where you decide to save collected data
+whether server or client. (You have two option database and storage, by default it's set as storage).
+
+>disInclude: It's array of jQuery selectors for disincluding unwanted input elements. 
+
+#Optional Options
+>urlToSave, urlToSave, urlToUpdate, urlToDelete: Those options need to use if saveTo option set as database
+every option corresponding to backend url which perform database related operations.
+
+#Callback Functions
+
+>afterMount: Triggered immediately after values mount to elements which saved by inputSaver.
+> 
+>(This can be use for reinitializing other plugings like select2, dataTables etc.)
+
+>mutateAfter: Triggered immediately after new options saved by inputSaver.
+> 
+>mutateBefore: Triggered immediately before new options saved by inputsaver.
+>
+>(These can be use for manipulating data before saving)
+
 
 
