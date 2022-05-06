@@ -10,7 +10,7 @@ default html theme so you need to add also bootstrap4 too.
 
 # CDN
 ```html 
-<script src="https://cdn.jsdelivr.net/gh/erensertkaya/inputSaver/inputSaver.js" referrerpolicy="no-referrer"></script> 
+<script src="https://cdn.jsdelivr.net/gh/erensertkaya/inputSaver@main/inputSaver.js" referrerpolicy="no-referrer"></script>
 ```
 
 # Dependencies
