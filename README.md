@@ -21,7 +21,7 @@ default html theme so you need to add also bootstrap4 too.
 
 # Simple Usages
 
-    #Database Example
+    # Database Example
 
 ````javascript
 $("#exampleDiv").inputSaver({
@@ -37,7 +37,7 @@ $("#exampleDiv").inputSaver({
 });
 ````
 
-    #Storage Example
+    # Storage Example
 
 ````javascript
 $("#exampleDiv").inputSaver({
