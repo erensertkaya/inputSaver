@@ -403,7 +403,6 @@ $.widget("IS.inputSaver", {
                 arr.push({id:localStorage.key(i),data:localStorage.getItem(localStorage.key(i)),widget_name:localStorage.key(i).split("_")[1],name:localStorage.key(i).split("_")[2]});
             }
         }
-        this._state.list = Object.assign({}, arr);
         
         if(arr.length > 0){
             this._state.list = Object.assign({}, arr);
