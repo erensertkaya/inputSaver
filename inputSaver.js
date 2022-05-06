@@ -404,12 +404,7 @@ $.widget("IS.inputSaver", {
             }
         }
         
-        if(arr.length > 0){
-            this._state.list = Object.assign({}, arr);
-        }
-        else{
-            this._state.list = "";
-        }
+         this._state.list = Object.assign([], arr);
     },
 
     _mountList(data){
