@@ -13,6 +13,9 @@ default html theme so you need to add also bootstrap4 too.
 <script src="https://cdn.jsdelivr.net/gh/erensertkaya/inputSaver@main/inputSaver.js" referrerpolicy="no-referrer"></script>
 ```
 
+#Live Example
+https://codepen.io/kozmostech/pen/yLvYvgo?editors=1111
+
 # Dependencies
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
