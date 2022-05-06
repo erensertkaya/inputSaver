@@ -37,7 +37,7 @@ $("#exampleDiv").inputSaver({
     name:"count",
     saveTo:"database",
     context:[$("#myForm")],
-    disInclude:[".myClass","myId"],
+    disInclude:[".myClass","#myId"],
     urlToMount:"/plugin/inputsaver/all",
     urlToSave:"/plugin/inputsaver/create",
     urlToUpdate:"/plugin/inputsaver/update",
@@ -53,7 +53,7 @@ $("#exampleDiv").inputSaver({
     name:"count",
     saveTo:"storage",
     context:[$("#myForm")],
-    disInclude:[".myClass","myId"],
+    disInclude:[".myClass","#myId"],
 });
 ````
 ___
