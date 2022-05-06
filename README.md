@@ -8,6 +8,8 @@ inputSaver plugin has built on jQuery-ui widget factory so after adding jQuery t
 html file you also need to add library called jQuery-ui. inputSaver uses Bootstrap for 
 default html theme so you need to add also bootstrap4 too.
 
+> cdn : ```html <script src="https://cdn.jsdelivr.net/gh/erensertkaya/inputSaver/inputSaver.js" referrerpolicy="no-referrer"></script> ```
+
 # Dependencies
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
