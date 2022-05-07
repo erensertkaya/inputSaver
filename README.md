@@ -4,7 +4,7 @@ A jQuery plugin for save your form elements current state and dataTable columnVi
 (Current api only support columnVisibility for dataTables but it may expand for further dataTable options.)
 
 # Installation
-inputSaver plugin has built on jQuery-ui widget factory so after adding jQuery to your
+inputSaver plugin built on jQuery-ui widget factory so after adding jQuery to your
 html file you also need to add library called jQuery-ui. inputSaver uses Bootstrap for 
 default html theme so you need to add also bootstrap4 too.
 
